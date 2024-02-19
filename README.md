@@ -107,3 +107,25 @@ BinarySearchAutocomplete.java-
 
 HashListAutocomplete.java-
   New autocomplete implementation using a HashMap based approach. Implementation provides O(1) performance for topMatches but consumes more memory. 
+
+
+
+P5-Huffman: Java Programming (April 2023)
+This project focuses on the implementation of Huffman Coding, a fundamental algorithm used in data compression. Huffman Coding is widely used in various applications, including compression algorithms like ZIP. The project introduces students to the concepts and implementation details of Huffman Coding which emphasizes its significance in reducing the size of data while maintaining integrity.
+
+HuffMainDecompress.java-
+  This file contains the main method for decompressing a file using the Huffman algorithm. It prompts the user to select a file for decompression, then calls the HuffProcessor.decompress method, and saves the decompressed file with a specific naming convention. 
+
+HuffProcessor.java-
+  This file contains the main logic for bothc ompression and decompression using the Huffman algorithm. It includes methods 'compress', 'decompress', getCounts', 'makeTree', 'makeEncodings', and 'writeTree,' responsible for determining frequencies, creating a Huffman tree, generating encodings, and writing compressed data to files.
+
+HuffMainCompress.java-
+  This file contains the main method for compressing a file using the Huffman algorithm. It prompts the user to select a file for compression, calls the 'HuffProcessor.compress' method, and saves the compressed file with a specific naming convention. The compression process involves determining character frequencies, creating Huffman trees, generation encodings, and writing compressed data.
+
+HuffNode.java-
+  This class represents a node in the Huffman tree. Each node contains information about the character value, its frequency, and references to left and right child nodes. The Huffman tree is constructed using instances of this class.
+
+HuffException.java-
+  This class defines a custom exception specific to errors encountered during the Huffman coding process. It provides additional error handling capabilities for dealing with exceptional conditions during compression and decompression.
+  
+
