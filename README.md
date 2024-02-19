@@ -5,6 +5,8 @@ Analysis, use, and design of data structures and algorithms using an object-orie
 Emphasis on abstraction including interfaces and abstract data types for lists, trees, sets, tables/maps, and graphs. 
 Implementation and evaluation of programming techniques including recursion. Intuitive and rigorous analysis of algorithms.
 
+
+
 Project0: Java Programming (January 2023) 
 Student Code Files: Person201.java, Person201Utilities.java, Person201Demo.java, Person201Finder.java
 
@@ -25,6 +27,9 @@ Person201Finder.java-
   Does search on user based on data file people.txt
   Creates Person201 object representing the user
 
+
+
+
 P1-nbody: Java Programming (January/February 2023) 
 Student Code Files: CelestialBody.java, NBody.java
 
@@ -39,6 +44,8 @@ NBody.java-
   reads data from a file specifying initial positions and masses of bodies
   runs the simulation over a set time period and animates the interactions between the bodies
   includes static metjhods fro reading radius, reading bodies, and the main simulation method
+
+
 
 P2-markov: Java Programming (February 2023)
 Concepts related to generative models, Markov processes, 
@@ -55,6 +62,8 @@ HashMarkov.java-
   Uses WordGrams of a given order to preduct the next word based on the training text
   Creates  HashMap that maps WordGrams to lists of words that follow the WordGram
   Utilizes hashing for efficient access to training data and text generation
+
+
 
 
 P3-dna: Java Programming (February/March 2023)
@@ -75,3 +84,26 @@ DNABenchmark.java-
   File contains the main method for benchmarking the performance of DNA manipulation methods.
   This file can be used to compare the efficiency of LinkStrand implementation against String and
   StringBuilder implementations.
+
+P4-autocomplete: Java Programming (March/April 2023)
+This project focuses on implementing efficient autocomplete algorithms using Java,
+specifically leveraging comparators and binary search algorithms, along with HashMap
+based approaches.
+
+AutocompleteMain.java-
+  Allows the user to interact with the autocomplete application with supporting data file.
+  The default implementationg is BruteAutocomplete, with additional implementations of
+  BinarySearchAutocomplete and HashListAutocomplete.
+
+PrefixComparator.java-
+  Defines a Comparator used in BinarySearchAutocomplete to compare terms based on a given prefix size.
+
+BinarySearchLibrary.java-
+  Contains utility methods for binary search functionality used in  BinarySearchAutocomplete.
+  Implements methods for finding the first and last indices of terms matching a prefix.
+
+BinarySearchAutocomplete.java-
+  Completes implementation of topMatches method which returns highest weighted matches for given prefix. Relies on methods implemented in BinarySearchLibrary.
+
+HashListAutocomplete.java-
+  New autocomplete implementation using a HashMap based approach. Implementation provides O(1) performance for topMatches but consumes more memory. 
